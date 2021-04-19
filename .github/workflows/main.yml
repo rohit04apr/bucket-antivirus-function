@@ -45,6 +45,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-          asset_path: /opt/mount/lambda.zip
+          asset_path: build/lambda.zip
           asset_name: anti-virus.zip
           asset_content_type: application/zip
